@@ -1,0 +1,25 @@
+.fear-and-greed-container {
+  height: 30vh;
+  /* border: 5px solid white; */
+  background-color: #dd5a3a;
+  border-radius: 25%/50%;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.3rem;
+}
+
+.fear-and-greed-container p {
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0rem;
+  font-size: 1rem;
+}
+p {
+  margin: 0rem;
+  font-size: 1rem;
+}

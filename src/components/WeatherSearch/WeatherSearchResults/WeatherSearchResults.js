@@ -1,10 +1,9 @@
 import React from "react";
 import classes from "./WeatherSearchResults.module.css";
-import { Card } from "react-bootstrap";
 
 export default function WeatherSearchResults({ weather }) {
   if (weather.length === 0) {
-    return <h1>No Results</h1>;
+    return <h2>No Results</h2>;
   } else {
     return (
       <>

@@ -1,26 +1,11 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import classes from "./CoinSearchResults.module.css";
 
 export default function CoinSearchResults() {
   return (
-    <Card
-      style={{
-        // width: "23rem",
-        height: "12.5rem",
-        backgroundColor: "red",
-        color: "white",
-        textAlign: "center",
-      }}
-    >
-      <Card.Body>
-        <Card.Title>Coin Search</Card.Title>
-        <Card.Text>
-          These are the CoinSearch Results
-        </Card.Text>
-        <Card.Link href="#" style={{ color: "white" }}>
-          Coin Link
-        </Card.Link>
-      </Card.Body>
-    </Card>
+    <div className={classes["coin-search-container"]}>
+      <h2>Here is the coin search container</h2>
+      <p>Here is coin information</p>
+    </div>
   );
 }

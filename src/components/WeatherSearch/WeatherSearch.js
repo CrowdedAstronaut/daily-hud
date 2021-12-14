@@ -3,9 +3,17 @@ import { useState, useEffect } from "react";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 import { Card } from "react-bootstrap";
 
+//Global Variables
+const BASE_URL = "";
+const API_KEY = "";
+
+//API
+
 export default function WeatherSearch() {
   const [weather, setWeather] = useState([]);
   const [searchString, setSearchString] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     geoWeather();
@@ -51,7 +59,7 @@ export default function WeatherSearch() {
   return (
     <Card className="weather-container">
       <div className="weather-header">
-        <h1>Weather Depot</h1>
+        <h1>Daily Weather</h1>
       </div>
 
       <div className="weather-form">

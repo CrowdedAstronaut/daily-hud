@@ -17,8 +17,11 @@ export default function WeatherSearchResults() {
         <Card.Text>
           This is the weather search results
         </Card.Text>
-        <Card.Link href="#" style={{ color: "white" }}>
-          Weather Link
+        <Card.Link
+          href="/weather"
+          style={{ color: "white" }}
+        >
+          These are the weather details
         </Card.Link>
       </Card.Body>
     </Card>

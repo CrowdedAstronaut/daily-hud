@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./WeatherSearchResults.module.css";
 import { Card } from "react-bootstrap";
 
 export default function WeatherSearchResults({ weather }) {
@@ -7,26 +8,26 @@ export default function WeatherSearchResults({ weather }) {
   } else {
     return (
       <>
-        <div className="search-results">
+        <div className={classes["weather-container"]}>
           <h2>Results:</h2>
-          <h2>{weather.name}</h2>
-          <h3>{weather.weather[0].description}</h3>
-          <h2>{weather.main.temp}° F</h2>
-          <h3>Low: {weather.main.temp_min}° F</h3>
-          <h3>High: {weather.main.temp_max}° F</h3>
-          <h3>Humidity: {weather.main.humidity}%</h3>
-          <h3>
+          <p>{weather.name}</p>
+          <p>{weather.weather[0].description}</p>
+          <p>{weather.main.temp}° F</p>
+          <p>Low: {weather.main.temp_min}° F</p>
+          <p>High: {weather.main.temp_max}° F</p>
+          <p>Humidity: {weather.main.humidity}%</p>
+          <h2>
             Sunrise:{" "}
             {new Date(
               weather.sys.sunrise * 1000
             ).toLocaleTimeString("en-IN")}
-          </h3>
-          <h3>
+          </h2>
+          <h2>
             Sunset:{" "}
             {new Date(
               weather.sys.sunset * 1000
             ).toLocaleTimeString("en-IN")}
-          </h3>
+          </h2>
         </div>
       </>
     );

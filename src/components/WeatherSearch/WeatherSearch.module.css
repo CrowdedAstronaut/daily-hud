@@ -3,7 +3,7 @@
 }
 
 .weather-container {
-  grid-column: 1;
+  /* grid-column: 1; */
   margin-bottom: 10px;
   border: 5px solid white;
   background-color: rgb(6, 97, 170);
@@ -11,6 +11,13 @@
 }
 
 .weather-container h1 {
+  margin-left: 10px;
+  background-color: rgb(6, 97, 170);
+  color: white;
+}
+
+.weather-container h2 {
+  margin: 0px;
   margin-left: 10px;
   background-color: rgb(6, 97, 170);
   color: white;

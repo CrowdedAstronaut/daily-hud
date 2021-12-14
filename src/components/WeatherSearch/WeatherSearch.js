@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 import { Card } from "react-bootstrap";
+import classes from "./WeatherSearch.module.css";
 
 //Global Variables
 const BASE_URL = "";
@@ -57,12 +58,12 @@ export default function WeatherSearch() {
   }
 
   return (
-    <Card className="weather-container">
-      <div className="weather-header">
+    <Card className={classes["weather-container"]}>
+      <div className={classes["weather-header"]}>
         <h1>Daily Weather</h1>
       </div>
 
-      <div className="weather-form">
+      <div className={classes["weather-form"]}>
         <form
           onSubmit={handleSubmit}
           className="search-form"

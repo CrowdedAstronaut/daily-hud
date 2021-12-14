@@ -1,0 +1,29 @@
+.weather-form {
+  margin-left: 10px;
+}
+
+.weather-container {
+  grid-column: 1;
+  margin-bottom: 10px;
+  border: 5px solid white;
+  background-color: rgb(6, 97, 170);
+  color: white;
+}
+
+.weather-container h1 {
+  margin-left: 10px;
+  background-color: rgb(6, 97, 170);
+  color: white;
+}
+
+.weather-header {
+  background-color: rgb(6, 97, 170);
+}
+
+.search-form {
+  background-color: rgb(6, 97, 170);
+}
+
+.weather-form {
+  background-color: rgb(6, 97, 170);
+}

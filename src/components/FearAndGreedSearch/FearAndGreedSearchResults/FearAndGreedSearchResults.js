@@ -24,6 +24,10 @@ export default function FearAndGreedSearchResults({
           Yesterday's Classification:{" "}
           {fearAndGreed.data[1].value_classification}
         </p>
+        {/* <p style={{ color: "blue" }}>
+          Before Yesterday's Classification:{" "}
+          {fearAndGreed.data[2].value_classification}
+        </p> */}
       </div>
     );
   }

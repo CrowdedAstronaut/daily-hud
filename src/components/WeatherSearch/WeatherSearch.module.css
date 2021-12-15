@@ -1,6 +1,6 @@
 .weather-container {
   /* grid-column: 1; */
-  border-radius: 25%/50%;
+  border-radius: 0.938rem;
   /* margin-bottom: 10px; */
   height: 30vh;
   margin: 0.3rem;

@@ -11,9 +11,10 @@ export default function FearAndGreedSearch() {
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
 
-  // const fearAndGreedSearchAPI =
-  //   "https://api.alternative.me/fng/?limit=2";
-  // units: "&units=imperial",
+  const fearAndGreedSearch = {
+    api: "https://api.alternative.me/fng/?limit=",
+    format: "&date_format=us",
+  };
 
   function handleChange(event) {
     setSearchString(event.target.value);
@@ -28,7 +29,8 @@ export default function FearAndGreedSearch() {
   // ${searchString},us${fearAndGreedSearch.units}${fearAndGreedSearch.apikey}
 
   async function getFearAndGreed() {
-    const url = "https://api.alternative.me/fng/?limit=2";
+    const url = `${fearAndGreedSearch.api}${searchString}${fearAndGreedSearch.format}`;
+
     // "https://api.alternative.me/fng/?limit=10&date_format=us";
     console.log(url);
     try {

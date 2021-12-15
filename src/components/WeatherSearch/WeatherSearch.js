@@ -5,7 +5,8 @@ import classes from "./WeatherSearch.module.css";
 
 //Global Variables
 const BASE_URL = "";
-const API_KEY = "";
+const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
+console.log(API_KEY);
 
 //API
 

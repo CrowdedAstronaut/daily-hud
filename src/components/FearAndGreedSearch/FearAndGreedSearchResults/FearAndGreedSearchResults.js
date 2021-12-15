@@ -4,13 +4,26 @@ import classes from "./FearAndGreedSearchResults.module.css";
 export default function FearAndGreedSearchResults({
   fearAndGreed,
 }) {
+  console.log(fearAndGreed);
   if (fearAndGreed.length === 0) {
     return <h2>No Results</h2>;
   } else {
     return (
       <div className={classes["fear-and-greed-container"]}>
         <h2> Fear and Greed Index </h2>
-        <p> The FearAndGreed Search Results</p>
+        <p> Today's Value: {fearAndGreed.data[0].value}</p>
+        <p style={{ color: "lime" }}>
+          Today's Classification:{" "}
+          {fearAndGreed.data[0].value_classification}
+        </p>
+        <p>
+          {" "}
+          Yesterday's Value: {fearAndGreed.data[1].value}
+        </p>
+        <p style={{ color: "lime" }}>
+          Yesterday's Classification:{" "}
+          {fearAndGreed.data[1].value_classification}
+        </p>
       </div>
     );
   }

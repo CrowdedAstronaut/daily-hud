@@ -49,12 +49,14 @@ export default function WeatherSearch() {
   async function getWeather() {
     const url = `${weatherSearch.api}${searchString},us${weatherSearch.units}${weatherSearch.apikey}${weatherSearch.key}`;
 
-    await fetch(url)
-      .then((res) => res.json())
-      .then((result) => {
-        setWeather(result);
-      })
-      .catch(console.error);
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      console.log(data);
+      setWeather(data);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   return (

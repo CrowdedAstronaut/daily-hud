@@ -108,7 +108,7 @@ Comment: author, caption_body, post_time
 
 
 
-## User Experience - Responsive design & Accessability
+## User Experience - Mobile First Methodology
 
 
 

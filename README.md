@@ -33,9 +33,7 @@ Our team used Agile workflow for this sprint.
 
 ## Version Control
 
-We implemented Git Feature Branch Workflow. All pull requests in Github were reviewed by another team member before being merged into the main branch.
-
-<hr />
+I implemented Git Feature Branch Workflow in order to manage this project.
 <br />
 
 # Technologies <a name="technologies"></a>

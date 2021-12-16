@@ -1,47 +1,143 @@
-# Frontend Mentor - NFT preview card component solution
+# Overview
+daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go. Using dailyHUD, you can get all of the information you need to start your day, in one convenient spot. 
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
+# Table of Contents
 
-## Table of contents
+- [About this project](#about)
+- [Workflow](#workflow)
+- [Technologies](#technologies)
+- [Links](#links)
+- [Installation](#install)
+- [APIs](#apis)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+<hr />
+<br />
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+# About the Project <a name="about"></a>
+daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the fear-and-greed index. I prioritized semantic naming conventions, hierarchies and aria-labels to ensure daily-HUD works well with assistive technologies (ie screen readers).
 
-## Overview
+![App Preview]()
 
-### The challenge
-
-Users should be able to:
-
+## User Stories
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- See different data visuializations depending on the states for interactive elements
+- 
+## Home Page
 
-### Screenshot
 
-![](./screenshot.jpg)
+</br>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+# Workflow <a name="workflow"></a>
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+Our team used Agile workflow for this sprint.
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+## Version Control
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+We implemented Git Feature Branch Workflow. All pull requests in Github were reviewed by another team member before being merged into the main branch.
+
+<hr />
+<br />
+
+# Technologies <a name="technologies"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Front End Languages</td>
+      <td>
+        <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+        <img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
+        <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+      </td>
+    </tr>
+    <tr>
+      <td>Frameworks & Libraries</td>
+      <td>
+        <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+        <img alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"/>
+      </td>      
+    <tr>
+      <td>Design</td>
+      <td>
+        <img alt="Sketch" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+      </td>
+    </tr>
+    <tr>
+      <td>Utilities</td>
+      <td>
+        <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+      </td>
+    </tr>
+     <tr>
+      <td>Workflow</td>
+      <td>
+        <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+        <img alt="Trello" src="https://img.shields.io/badge/Trello-%23026AA7.svg?&style=for-the-badge&logo=Trello&logoColor=white"/>
+        <img alt="Zoom" src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white"/>
+                                                                                                                     <img alt="Slack" src="https://img.shields.io/badge/Slack-%23026AA7.svg?&style=for-the-badge&logo=Slack&logoColor=white"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Deployment</td>
+      <td>
+         
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<br />
+
+
+## Learning Experience
+
+
+## Setting Up Project
+
+
+## Building the Core Structure
+
+React Components The Component Hierarchy diagram, above, represents of how the components are structured in our app.
+
+Our API contains 2 models
+Post: image_url, author, location, post_time, caption_body
+Comment: author, caption_body, post_time
+
+## Navigation
+
+
+
+## User Experience - Responsive design & Accessability
+
+
+
+## Future Directions
+
+User Stories (Stretch Goals)
+
+
+## Accomplishments
+
+
+
+## Installation
+
+yarn install
+
+
+
+
+
+
+
+
+
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- GitHub URL: [](https://github.com/CrowdedAstronaut/daily-hud)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -53,7 +149,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Sass](https://sass-lang.com/) - Syntactically Awesome Style Sheets
+- React.js
 
 ### What I learned
 
@@ -86,11 +182,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Ross Phillips](https://www.johnrossphillips.com)
+- LinkedIn - [](https://www.linkedin.com/in/johnrossphillips/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 

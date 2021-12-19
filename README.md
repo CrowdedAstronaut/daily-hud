@@ -78,7 +78,7 @@ I implemented Git Feature Branch Workflow in order to manage this project.
     <tr>
       <td>Deployment</td>
       <td>
-         
+          <img alt="Heroku" src="https://img.shields.io/badge/Heroku-100000?style=for-the-badge&logo=heroku&logoColor=white"/>
       </td>
     </tr>
   </tbody>

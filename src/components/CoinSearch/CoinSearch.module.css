@@ -1,12 +1,23 @@
 .coin-search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  background-color: #fb9f32;
-  color: white;
-  /* border: 5px solid #f9e9de; */
+  /* grid-column: 1; */
   border-radius: 0.938rem;
+  /* margin-bottom: 10px; */
+  height: 30vh;
   margin: 0.3rem;
+  background-color: orange;
+  color: white;
+}
+
+.coin-search-container h2 {
+  font-size: 1rem;
+  margin: 0rem;
+
+  /* background-color: rgb(6, 97, 170); */
+  color: white;
+}
+.coin-search-container p {
+  font-size: 0.75rem;
+  margin: 0rem;
+
+  color: white;
 }

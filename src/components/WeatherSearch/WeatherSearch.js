@@ -70,14 +70,16 @@ export default function WeatherSearch() {
           onSubmit={handleSubmit}
           className="search-form"
         >
-          <input
-            placeholder="Search"
-            type="text"
-            name="searchString"
-            required
-            onChange={handleChange}
-            value={searchString}
-          />
+          <label htmlFor="" visibilityHidden="true">
+            <input
+              placeholder="Search"
+              type="text"
+              name="searchString"
+              required
+              onChange={handleChange}
+              value={searchString}
+            />
+          </label>
           <button type="submit">Search</button>
         </form>
       </div>

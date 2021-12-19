@@ -29,7 +29,7 @@ export default function FearAndGreedSearch() {
   // ${searchString},us${fearAndGreedSearch.units}${fearAndGreedSearch.apikey}
 
   async function getFearAndGreed() {
-    const url = `${fearAndGreedSearch.api}${searchString}${fearAndGreedSearch.format}`;
+    const url = `${fearAndGreedSearch.api}${searchString}`;
 
     // "https://api.alternative.me/fng/?limit=10&date_format=us";
     console.log(url);

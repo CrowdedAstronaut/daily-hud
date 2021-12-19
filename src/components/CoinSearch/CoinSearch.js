@@ -4,7 +4,7 @@ import classes from "./CoinSearch.module.css";
 
 console.log("Hello from the Coin search component");
 export default function CoinSearch() {
-  const [coin, setCoin] = useState([]);
+  const [coins, setCoins] = useState([]);
   const [searchString, setSearchString] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
@@ -35,14 +35,14 @@ export default function CoinSearch() {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
-      setCoin(data);
+      setCoins(data);
     } catch (err) {
       console.error(err);
     }
   }
 
   return (
-    <div className={classes["coin-container"]}>
+    <div className={classes["coin-search-container"]}>
       <div className={classes["coin-header"]}>
         <h2>Daily coin</h2>
       </div>
@@ -64,7 +64,7 @@ export default function CoinSearch() {
         </form>
       </div>
 
-      <CoinSearchResults coin={coin} />
+      <CoinSearchResults coins={coins} />
     </div>
   );
 }

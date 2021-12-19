@@ -1,12 +1,12 @@
-.coin-search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30vh;
-  background-color: #fb9f32;
-  color: white;
-  /* border: 5px solid #f9e9de; */
-  border-radius: 0.938rem;
-  margin: 0.3rem;
+.coin-search-container h2 {
+  font-size: 1rem;
+  margin: 0rem;
+}
+h3 {
+  margin: 0rem;
+  font-size: 1rem;
+}
+p {
+  margin: 0rem;
+  font-size: 1rem;
 }

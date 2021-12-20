@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "./WeatherSearchResults.module.css";
+import Sunrise from "../../../assets/icons/bi_sunrise-fill.svg";
+import Sunset from "../../../assets/icons/bi_sunset-fill.svg";
 
 export default function WeatherSearchResults({ weather }) {
   if (weather.length === 0) {
@@ -15,25 +17,21 @@ export default function WeatherSearchResults({ weather }) {
             <span> {weather.weather[0].description}</span>
           </p>
           <p>{weather.main.temp}° F</p>
-          <p>Low: {weather.main.temp_min}° F</p>
+          {/* <p>Low: {weather.main.temp_min}° F</p>
           <p>High: {weather.main.temp_max}° F</p>
-          <p>Humidity: {weather.main.humidity}%</p>
-          <h2>
-            <img
-              className="sun-icon"
-              src="../../../assets/icons/bi_sunrise-fill.svg"
-              alt=""
-            />{" "}
+          <p>Humidity: {weather.main.humidity}%</p> */}
+          <p>
+            <img src={Sunrise} alt="Sunrise Icon" />{" "}
             {new Date(
               weather.sys.sunrise * 1000
             ).toLocaleTimeString("en-IN")}
-          </h2>
-          <h2>
-            Sunset:{" "}
+          </p>
+          <p>
+            <img src={Sunset} alt="Sunset Icon" />{" "}
             {new Date(
               weather.sys.sunset * 1000
             ).toLocaleTimeString("en-IN")}
-          </h2>
+          </p>
         </div>
       </>
     );

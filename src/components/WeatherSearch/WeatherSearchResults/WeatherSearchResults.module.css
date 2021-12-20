@@ -11,6 +11,7 @@ p {
   font-size: 1rem;
 }
 
-.sun-icon {
+.sun-icon img {
   width: 1rem;
+  /* color: white; */
 }

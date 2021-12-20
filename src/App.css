@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,5 +11,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #000000;
+  font-family: Gilroy-Bold;
+  color: white;
 }

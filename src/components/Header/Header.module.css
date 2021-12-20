@@ -1,7 +1,15 @@
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+}
+
 .header {
   /* display: flex; */
   text-align: center;
   font-weight: 700;
   font-size: 1.75rem;
   margin-bottom: 3vh;
+  background-color: #000000;
+  font-family: Gilroy-Bold;
+  color: white;
 }

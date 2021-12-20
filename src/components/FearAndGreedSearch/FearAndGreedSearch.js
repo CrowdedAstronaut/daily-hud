@@ -6,42 +6,48 @@ console.log(
   "Hello from the fear and greed search component"
 );
 export default function FearAndGreedSearch() {
-  const [fearAndGreed, setFearAndGreed] = useState([]);
-  const [searchString, setSearchString] = useState("");
+  // const [fearAndGreed, setFearAndGreed] = useEffect([]);
+  // const [searchString, setSearchString] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
 
   const fearAndGreedSearch = {
-    api: "https://api.alternative.me/fng/?limit=",
+    api: "https://api.alternative.me/fng/?limit=10",
     format: "&date_format=us",
   };
 
-  function handleChange(event) {
-    setSearchString(event.target.value);
-  }
+  // function handleChange(event) {
+  //   setSearchString(event.target.value);
+  // }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    getFearAndGreed(searchString);
-    setSearchString("");
-  }
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   getFearAndGreed(searchString);
+  //   setSearchString("");
+  // }
 
   // ${searchString},us${fearAndGreedSearch.units}${fearAndGreedSearch.apikey}
 
-  async function getFearAndGreed() {
-    const url = `${fearAndGreedSearch.api}${searchString}`;
-
-    // "https://api.alternative.me/fng/?limit=10&date_format=us";
-    console.log(url);
-    try {
+  useEffect(() => {
+    const url = `${fearAndGreedSearch.api}`;
+    const getFearAndGreed = async () => {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
-      setFearAndGreed(data);
-    } catch (err) {
-      console.error(err);
-    }
-  }
+    };
+    getFearAndGreed();
+  }, []);
+  // "https://api.alternative.me/fng/?limit=10&date_format=us";
+  // console.log(url);
+  //   try {
+  //     const response = await fetch(url);
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setFearAndGreed(data);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // }
 
   return (
     <div className={classes["fear-and-greed-container"]}>
@@ -49,7 +55,7 @@ export default function FearAndGreedSearch() {
         <h2>Daily fear-and-greed</h2>
       </div>
 
-      <div className={classes["fear-and-greed-form"]}>
+      {/* <div className={classes["fear-and-greed-form"]}>
         <form
           onSubmit={handleSubmit}
           className="search-form"
@@ -64,11 +70,7 @@ export default function FearAndGreedSearch() {
           />
           <button type="submit">Search</button>
         </form>
-      </div>
-
-      <FearAndGreedSearchResults
-        fearAndGreed={fearAndGreed}
-      />
+      </div> */}
     </div>
   );
 }

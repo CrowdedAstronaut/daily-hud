@@ -1,5 +1,6 @@
 # Overview
-daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go. Using dailyHUD, you can get all of the information you need to start your day, in one convenient spot. 
+
+daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go. Using dailyHUD, you can get all of the information you need to start your day, in one convenient spot.
 
 # Table of Contents
 
@@ -14,16 +15,18 @@ daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go
 <br />
 
 # About the Project <a name="about"></a>
+
 daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the fear-and-greed index. I prioritized semantic naming conventions, hierarchies and aria-labels to ensure daily-HUD works well with assistive technologies (ie screen readers).
 
-![App Preview]()
+![App Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-desktop-home-screen.png)
 
 ## User Stories
+
 - View the optimal layout depending on their device's screen size
 - See different data visuializations depending on the states for interactive elements
-- 
-## Home Page
+-
 
+## Home Page
 
 </br>
 
@@ -87,12 +90,9 @@ I implemented Git Feature Branch Workflow in order to manage this project.
 <hr />
 <br />
 
-
 ## Learning Experience
 
-
 ## Setting Up Project
-
 
 ## Building the Core Structure
 
@@ -104,34 +104,17 @@ Comment: author, caption_body, post_time
 
 ## Navigation
 
-
-
 ## User Experience - Mobile First Methodology
-
-
 
 ## Future Directions
 
 User Stories (Stretch Goals)
 
-
 ## Accomplishments
-
-
 
 ## Installation
 
 yarn install
-
-
-
-
-
-
-
-
-
-
 
 ### Links
 
@@ -183,7 +166,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [Ross Phillips](https://www.johnrossphillips.com)
 - LinkedIn - [](https://www.linkedin.com/in/johnrossphillips/)
 
-
-
 ## Acknowledgments
-

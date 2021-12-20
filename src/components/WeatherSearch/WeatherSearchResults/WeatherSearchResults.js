@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./WeatherSearchResults.module.css";
-import Sunrise from "../../../assets/icons/bi_sunrise-fill.svg";
-import Sunset from "../../../assets/icons/bi_sunset-fill.svg";
+import Sunrise from "../../../assets/icons/sunrise-icon.svg";
+import Sunset from "../../../assets/icons/sunset-icon.svg";
 
 export default function WeatherSearchResults({ weather }) {
   if (weather.length === 0) {
@@ -22,15 +22,11 @@ export default function WeatherSearchResults({ weather }) {
           <p>Humidity: {weather.main.humidity}%</p> */}
           <p>
             <img src={Sunrise} alt="Sunrise Icon" />{" "}
-            {new Date(
-              weather.sys.sunrise * 1000
-            ).toLocaleTimeString("en-IN")}
+            {new Date(weather.sys.sunrise * 1000).toLocaleTimeString("en-IN")}
           </p>
           <p>
             <img src={Sunset} alt="Sunset Icon" />{" "}
-            {new Date(
-              weather.sys.sunset * 1000
-            ).toLocaleTimeString("en-IN")}
+            {new Date(weather.sys.sunset * 1000).toLocaleTimeString("en-IN")}
           </p>
         </div>
       </>

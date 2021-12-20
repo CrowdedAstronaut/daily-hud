@@ -8,7 +8,7 @@ export default function WeatherSearchResults({ weather }) {
     return (
       <>
         <div className={classes["weather-container"]}>
-          <h2>Results:</h2>
+          {/* <h2>Results:</h2> */}
           <p>
             {weather.name}
             <br />
@@ -19,7 +19,11 @@ export default function WeatherSearchResults({ weather }) {
           <p>High: {weather.main.temp_max}° F</p>
           <p>Humidity: {weather.main.humidity}%</p>
           <h2>
-            Sunrise:{" "}
+            <img
+              className="sun-icon"
+              src="../../../assets/icons/bi_sunrise-fill.svg"
+              alt=""
+            />{" "}
             {new Date(
               weather.sys.sunrise * 1000
             ).toLocaleTimeString("en-IN")}

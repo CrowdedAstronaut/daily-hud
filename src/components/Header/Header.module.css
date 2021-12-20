@@ -6,11 +6,14 @@
 .header {
   position: absolute;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   left: 1.25rem;
   top: 2.81rem;
   background-color: #000000;
   font-family: Gilroy-Bold;
   color: white;
+  border: 1px solid white;
 }
 
 h1 {

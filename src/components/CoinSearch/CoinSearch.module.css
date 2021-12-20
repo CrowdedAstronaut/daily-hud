@@ -1,11 +1,19 @@
 .coin-search-container {
   /* grid-column: 1; */
-  border-radius: 0.625rem;
+  border-radius: 0.31rem;
   /* margin-bottom: 10px; */
-  height: 30vh;
+  display: flex;
+  height: 8.75rem;
+  width: 20.94rem;
   margin: 0.3rem;
+  position: relative;
+  top: 20.31rem;
+  height: 15.06rem;
+  /* margin: 0.3rem; */
   background-color: black;
   color: white;
+  border: 1px solid white;
+  /* opacity: 0.9; */
 }
 
 .coin-search-container h2 {

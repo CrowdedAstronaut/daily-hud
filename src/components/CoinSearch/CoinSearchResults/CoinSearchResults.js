@@ -28,7 +28,7 @@ const config = {
   options: {},
 };
 
-const myChart = new Chart(
+const MyChart = new Chart(
   document.getElementById("myChart"),
   config
 );
@@ -39,9 +39,9 @@ export default function CoinSearchResults({ coins }) {
   } else {
     return (
       <div className={classes["coin-search-container"]}>
-        <h2>Here is the coin search container</h2>
+        <h2>Here is the coin search results container</h2>
         <canvas id="myChart" width="200" height="200">
-          <myChart />
+          <MyChart />
         </canvas>
         <p>{coins.data[1027].symbol}</p>
       </div>

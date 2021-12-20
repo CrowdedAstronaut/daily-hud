@@ -1,8 +1,11 @@
 .fear-and-greed-container {
-  height: 30vh;
+  /* height: 30vh; */
   /* border: 5px solid white; */
+  position: absolute;
+  width: 20.94rem;
+  top: 39.13rem;
   background-color: #dd5a3a;
-  border-radius: 0.938rem;
+  border-radius: 0.31rem;
   color: white;
   align-content: center;
   justify-content: center;

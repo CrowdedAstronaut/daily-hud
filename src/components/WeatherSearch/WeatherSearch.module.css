@@ -1,11 +1,15 @@
 .weather-container {
+  display: flex;
+  flex-direction: row-reverse;
   /* grid-column: 1; */
-  border-radius: 0.938rem;
+  border-radius: 0.31rem;
   /* margin-bottom: 10px; */
-  height: 30vh;
+  height: 8.75rem;
+  width: 20.94rem;
   margin: 0.3rem;
-  background-color: #0791b7;
+  background-color: black;
   color: white;
+  align-items: left;
 }
 
 .weather-container h2 {

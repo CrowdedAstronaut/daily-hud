@@ -1,15 +1,19 @@
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(./assets/fonts/Gilroy-Bold.ttf);
+  src: url(https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Bold.ttf);
 }
 
 .header {
-  /* display: flex; */
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.75rem;
-  margin-bottom: 3vh;
+  position: absolute;
+  text-align: left;
+  left: 1.25rem;
+  top: 2.81rem;
   background-color: #000000;
   font-family: Gilroy-Bold;
   color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }

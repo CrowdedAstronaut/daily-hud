@@ -9,8 +9,11 @@ export default function WeatherSearchResults({ weather }) {
       <>
         <div className={classes["weather-container"]}>
           <h2>Results:</h2>
-          <p>{weather.name}</p>
-          <p>{weather.weather[0].description}</p>
+          <p>
+            {weather.name}
+            <br />
+            <span> {weather.weather[0].description}</span>
+          </p>
           <p>{weather.main.temp}° F</p>
           <p>Low: {weather.main.temp_min}° F</p>
           <p>High: {weather.main.temp_max}° F</p>

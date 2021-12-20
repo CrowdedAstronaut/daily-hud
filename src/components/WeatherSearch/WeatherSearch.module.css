@@ -1,7 +1,7 @@
 .weather-container {
   position: absolute;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   /* grid-column: 1; */
   border-radius: 0.31rem;
   /* margin-bottom: 10px; */
@@ -9,9 +9,9 @@
   height: 8.75rem;
   width: 20.94rem;
   margin: 0.3rem;
-  background-color: black;
+  background-color: #171717;
   color: white;
-  align-items: left;
+  align-items: flex-start;
   border: 1px solid white;
 }
 

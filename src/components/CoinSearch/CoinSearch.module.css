@@ -1,3 +1,5 @@
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.ttf");
+
 .coin-search-container {
   /* grid-column: 1; */
   border-radius: 0.31rem;
@@ -10,7 +12,7 @@
   top: 20.31rem;
   height: 15.06rem;
   /* margin: 0.3rem; */
-  background-color: black;
+  background-color: #171717;
   color: white;
   border: 1px solid white;
   /* opacity: 0.9; */
@@ -19,7 +21,7 @@
 .coin-search-container h2 {
   font-size: 1rem;
   margin: 0rem;
-
+  font-family: "Gilroy-Semi-Bold";
   /* background-color: rgb(6, 97, 170); */
   color: white;
 }

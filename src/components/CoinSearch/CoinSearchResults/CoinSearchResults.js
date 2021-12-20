@@ -40,9 +40,9 @@ export default function CoinSearchResults({ coins }) {
     return (
       <div className={classes["coin-search-container"]}>
         <h2>Here is the coin search results container</h2>
-        <canvas id="myChart" width="200" height="200">
+        {/* <canvas id="myChart" width="200" height="200">
           <MyChart />
-        </canvas>
+        </canvas> */}
         <p>{coins.data[1027].symbol}</p>
       </div>
     );

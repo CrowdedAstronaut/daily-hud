@@ -7,14 +7,14 @@ import GaugeChart from "react-gauge-chart";
 console.log(
   "Hello from the fear and greed search component"
 );
-export default function FearAndGreedSearch() {
+export default function FearAndGreedSearch(fearAndGreed) {
   // const [fearAndGreed, setFearAndGreed] = useEffect([]);
   // const [searchString, setSearchString] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
 
   const fearAndGreedSearch = {
-    api: "https://api.alternative.me/fng/?limit=10",
+    api: "https://api.alternative.me/fng/?limit=2",
     format: "&date_format=us",
   };
 
@@ -39,6 +39,7 @@ export default function FearAndGreedSearch() {
     };
     getFearAndGreed();
   }, []);
+
   // "https://api.alternative.me/fng/?limit=10&date_format=us";
   // console.log(url);
   //   try {
@@ -93,6 +94,9 @@ export default function FearAndGreedSearch() {
           <button type="submit">Search</button>
         </form>
       </div> */}
+      {/* <FearAndGreedSearchResults
+        fearAndGreed={fearAndGreed}
+      /> */}
     </div>
   );
 }

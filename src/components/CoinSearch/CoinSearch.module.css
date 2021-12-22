@@ -6,7 +6,8 @@
   /* grid-column: 1; */
 
   /* margin-bottom: 10px; */
-
+  display: flex;
+  flex-direction: column;
   width: 20.94rem;
   /* margin: 0.3rem; */
   position: relative;

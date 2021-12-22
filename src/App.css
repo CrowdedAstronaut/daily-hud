@@ -3,6 +3,10 @@
   /* border: 1px solid white; */
 }
 
+#root {
+  width: 23.44rem;
+  height: 50.75rem;
+}
 .App {
   text-align: center;
   display: flex;

@@ -3,6 +3,7 @@ import classes from "./WeatherSearchResults.module.css";
 import Sunrise from "../../../assets/icons/sunrise-icon.svg";
 import Sunset from "../../../assets/icons/sunset-icon.svg";
 import Humidity from "../../../assets/icons/humidity-icon.svg";
+import Clouds from "../../../assets/icons/cloud-icon.svg";
 
 export default function WeatherSearchResults({ weather }) {
   if (weather.length === 0) {
@@ -11,11 +12,14 @@ export default function WeatherSearchResults({ weather }) {
     return (
       <>
         <div className={classes["weather-search-results"]}>
-          {/* <h2>Results:</h2> */}
           <p>
             {weather.name}
             <br />
-            <span> {weather.weather[0].description}</span>
+            <span>
+              {" "}
+              <img src={Clouds} alt="" />
+              {weather.weather[0].description}
+            </span>
           </p>
 
           {/* <p>Low: {weather.main.temp_min}° F</p>
@@ -34,8 +38,8 @@ export default function WeatherSearchResults({ weather }) {
             ).toLocaleTimeString("en-IN")}
           </p>
         </div>
-        <div className={classes["temperature"]}>
-          {weather.main.temp}° F
+        <div className={classes["temperature-container"]}>
+          <h2> {weather.main.temp}° F</h2>
         </div>
       </>
     );

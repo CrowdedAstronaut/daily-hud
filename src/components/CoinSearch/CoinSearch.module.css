@@ -1,22 +1,19 @@
 @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
 @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Medium.woff");
 
 .coin-search-container {
   /* grid-column: 1; */
-  border-radius: 0.31rem;
+
   /* margin-bottom: 10px; */
-  display: flex;
-  flex-direction: column;
-  height: 8.75rem;
+
   width: 20.94rem;
   /* margin: 0.3rem; */
   position: relative;
   top: 20.31rem;
   height: 15.06rem;
   /* margin: 0.3rem; */
-  background-color: #171717;
-  color: white;
-  border: 1px solid white;
+
   /* opacity: 0.9; */
 }
 
@@ -37,22 +34,40 @@
 .coins_container {
   display: flex;
   flex-direction: column;
+  border-radius: 0.31rem;
+
+  color: white;
+  /* border: 1px solid white; */
 }
 
 .coin_container {
   width: 20.938rem;
   height: 4.188rem;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
+  background-color: #171717;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .coin_container span {
+  font-family: "Gilroy-Medium";
   display: flex;
-  justify-content: space-between;
+  font-size: 0.875rem;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
 .coin_mobile_chart {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin_price_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

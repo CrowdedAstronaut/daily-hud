@@ -54,23 +54,6 @@ export default function CoinSearch() {
         <h2>Crypto Dashboard</h2>
       </div>
 
-      <div className={classes["coin-form"]}>
-        <form onSubmit={handleSubmit} className="search-form">
-          <input
-            placeholder="Search"
-            type="text"
-            name="searchString"
-            required
-            onChange={handleChange}
-            value={searchString}
-          />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-      {/* <div className={classes["coins-chart"]}>
-        <LineChart width={335} height={67} data={data} />
-      </div> */}
-      {/* <CoinSearchResults coins={coins} /> */}
       <div className={classes["coins_container"]}>
         <div className={classes["coin_container"]}>
           <span>
@@ -78,12 +61,12 @@ export default function CoinSearch() {
             Bitcoin <br />
             -1.43%
           </span>
-          <div className="coin_mobile_chart">
+          <div className={classes["coin_mobile_chart"]}>
             <span>
               <img src={TrendingUp} alt="" />
             </span>
           </div>
-          <div className="coin_price_info">
+          <div className={classes["coin_price_info"]}>
             <span>46022.80</span>
             <span>1 BTC</span>
           </div>
@@ -94,12 +77,12 @@ export default function CoinSearch() {
             Ethereum <br />
             -1.43%
           </span>
-          <div className="coin_mobile_chart">
+          <div className={classes["coin_mobile_chart"]}>
             <span>
               <img src={TrendingDown} alt="" />
             </span>
           </div>
-          <div className="coin_price_info">
+          <div className={classes["coin_price_info"]}>
             <span>4022.80</span>
             <span>1 ETH</span>
           </div>
@@ -110,12 +93,12 @@ export default function CoinSearch() {
             Cardano <br />
             -1.43%
           </span>
-          <div className="coin_mobile_chart">
+          <div className={classes["coin_mobile_chart"]}>
             <span>
               <img src={TrendingUp} alt="" />
             </span>
           </div>
-          <div className="coin_price_info">
+          <div className={classes["coin_price_info"]}>
             <span>1.02</span>
             <span>1 ADA</span>
           </div>

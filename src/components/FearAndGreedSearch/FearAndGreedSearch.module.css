@@ -7,7 +7,6 @@
   position: absolute;
   width: 20.94rem;
   top: 36.4rem;
-  background-color: #171717;
   border-radius: 0.31rem;
   color: white;
   align-content: center;
@@ -15,11 +14,14 @@
   display: flex;
   flex-direction: column;
   /* margin: 0.3rem; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .fear-and-greed-container p {
   font-size: 0.75rem;
+}
+.fear-and-greed-chart {
+  background-color: #171717;
 }
 h2 {
   margin: 0rem;

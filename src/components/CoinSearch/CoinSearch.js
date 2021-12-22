@@ -64,10 +64,7 @@ export default function CoinSearch() {
       </div>
 
       <div className={classes["coin-form"]}>
-        <form
-          onSubmit={handleSubmit}
-          className="search-form"
-        >
+        <form onSubmit={handleSubmit} className="search-form">
           <input
             placeholder="Search"
             type="text"
@@ -79,22 +76,15 @@ export default function CoinSearch() {
           <button type="submit">Search</button>
         </form>
       </div>
-      <div className={classes["coin-chart"]}>
+      {/* <div className={classes["coins-chart"]}>
         <LineChart width={335} height={67} data={data} />
-        <LineChart
-          width={335}
-          height={67}
-          data={data}
-          color={"green"}
-        />
-        <LineChart
-          width={335}
-          height={67}
-          data={data}
-          margin={0}
-        />
-      </div>
+      </div> */}
       {/* <CoinSearchResults coins={coins} /> */}
+      <div className="coins_container">
+        <div className="coin_container bitcoin">Bitcoin</div>
+        <div className="coin_container ethereum">Ethereum</div>
+        <div className="coin_container cardano">Cardano</div>
+      </div>
     </div>
   );
 }

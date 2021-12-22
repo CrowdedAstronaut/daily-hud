@@ -33,3 +33,15 @@
   font-family: "Gilroy-Regular";
   color: white;
 }
+
+/* .coins_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin_container {
+  width: 20.938rem;
+  height: 4.188rem;
+  border: 1px solid white;
+  display: flex;
+} */

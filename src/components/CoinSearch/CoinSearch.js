@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CoinSearchResults from "./CoinSearchResults/CoinSearchResults";
 import classes from "./CoinSearch.module.css";
+import LineChart from "react-linechart";
+import "../../../node_modules/react-linechart/dist/styles.css";
 
 console.log("Hello from the Coin search component");
 export default function CoinSearch() {
@@ -41,10 +43,24 @@ export default function CoinSearch() {
     }
   }
 
+  const data = [
+    {
+      color: "red",
+      points: [
+        { x: 1, y: 7 },
+        { x: 2, y: -3 },
+        { x: 3, y: 5 },
+        { x: 4, y: -2 },
+        { x: 5, y: 6 },
+        { x: 6, y: -3 },
+      ],
+    },
+  ];
+
   return (
     <div className={classes["coin-search-container"]}>
       <div className={classes["coin-header"]}>
-        <h2>Daily coin</h2>
+        <h2>Crypto Dashboard</h2>
       </div>
 
       <div className={classes["coin-form"]}>
@@ -63,8 +79,22 @@ export default function CoinSearch() {
           <button type="submit">Search</button>
         </form>
       </div>
-
-      <CoinSearchResults coins={coins} />
+      <div className={classes["coin-chart"]}>
+        <LineChart width={335} height={67} data={data} />
+        <LineChart
+          width={335}
+          height={67}
+          data={data}
+          color={"green"}
+        />
+        <LineChart
+          width={335}
+          height={67}
+          data={data}
+          margin={0}
+        />
+      </div>
+      {/* <CoinSearchResults coins={coins} /> */}
     </div>
   );
 }

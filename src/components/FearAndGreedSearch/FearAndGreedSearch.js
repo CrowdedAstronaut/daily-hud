@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import FearAndGreedSearchResults from "./FearAndGreedSearchResults/FearAndGreedSearchResults";
 import classes from "./FearAndGreedSearch.module.css";
 
+import GaugeChart from "react-gauge-chart";
+
 console.log(
   "Hello from the fear and greed search component"
 );
@@ -52,7 +54,15 @@ export default function FearAndGreedSearch() {
   return (
     <div className={classes["fear-and-greed-container"]}>
       <div className={classes["fear-and-greed-header"]}>
-        <h2>Daily fear-and-greed</h2>
+        <h2>Fear & Greed</h2>
+        <div className={classes["fear-and-greed-chart"]}>
+          <GaugeChart
+            id="gauge-chart2"
+            nrOfLevels={5}
+            percent={0.5}
+            arcWidth={0.15}
+          />
+        </div>
       </div>
 
       {/* <div className={classes["fear-and-greed-form"]}>

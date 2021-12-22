@@ -3,21 +3,24 @@
   /* border: 5px solid white; */
   position: absolute;
   width: 20.94rem;
-  top: 39.13rem;
-  background-color: #dd5a3a;
+  top: 36.4rem;
+  background-color: #171717;
   border-radius: 0.31rem;
   color: white;
   align-content: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
+  border: 1px solid white;
 }
 
 .fear-and-greed-container p {
   font-size: 0.75rem;
 }
-
+h2 {
+  text-align: left;
+}
 h3 {
   margin: 0rem;
   font-size: 1rem;

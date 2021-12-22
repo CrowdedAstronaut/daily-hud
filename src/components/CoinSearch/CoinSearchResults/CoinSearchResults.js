@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./CoinSearchResults.module.css";
-import Chart from "chart.js/auto";
+// import LineChart from "../../LineChart/LineChart";
 
 // const labels = ["January", "February", "March", "April", "May", "June"];
 // const data = {
@@ -28,10 +28,9 @@ export default function CoinSearchResults({ coins }) {
     return (
       <div className={classes["coin-search-container"]}>
         <h2>Here is the coin search results container</h2>
-        {/* <canvas id="myChart" width="200" height="200">
-          <MyChart />
-        </canvas> */}
-        <p>{coins.data[1027].symbol}</p>
+        {/* <LineChart /> */}
+
+        {/* <p>{coins.data[1027].symbol}</p> */}
       </div>
     );
   }

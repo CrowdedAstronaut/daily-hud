@@ -6,9 +6,10 @@
   border-radius: 0.31rem;
   /* margin-bottom: 10px; */
   display: flex;
+  flex-direction: column;
   height: 8.75rem;
   width: 20.94rem;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   position: relative;
   top: 20.31rem;
   height: 15.06rem;

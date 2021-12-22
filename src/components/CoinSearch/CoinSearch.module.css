@@ -34,7 +34,7 @@
   color: white;
 }
 
-/* .coins_container {
+.coins_container {
   display: flex;
   flex-direction: column;
 }
@@ -44,4 +44,15 @@
   height: 4.188rem;
   border: 1px solid white;
   display: flex;
-} */
+  justify-content: space-between;
+}
+
+.coin_container span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coin_mobile_chart {
+  display: flex;
+}

@@ -1,4 +1,5 @@
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.ttf");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
 
 .coin-search-container {
   /* grid-column: 1; */
@@ -28,6 +29,6 @@
 .coin-search-container p {
   font-size: 0.75rem;
   margin: 0rem;
-
+  font-family: "Gilroy-Regular";
   color: white;
 }

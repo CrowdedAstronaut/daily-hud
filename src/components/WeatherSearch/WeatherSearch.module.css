@@ -1,3 +1,6 @@
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
+
 .weather-container {
   position: absolute;
   display: flex;
@@ -25,6 +28,6 @@
 .weather-container p {
   font-size: 0.75rem;
   margin: 0rem;
-
+  font-family: "Gilroy-Regular";
   color: white;
 }

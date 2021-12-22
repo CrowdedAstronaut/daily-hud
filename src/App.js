@@ -19,7 +19,6 @@ function App() {
           element={
             <>
               <WeatherSearch />
-
               <CoinSearch />
               <FearAndGreedSearch />
             </>

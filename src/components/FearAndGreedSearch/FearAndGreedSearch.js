@@ -61,7 +61,19 @@ export default function FearAndGreedSearch() {
           id="gauge-chart2"
           nrOfLevels={5}
           percent={0.5}
-          arcWidth={0.15}
+          arcWidth={0.1}
+          animate={false}
+          needleColor="black"
+          arcPadding={0.01}
+          cornerRadius={1}
+          needleBaseColor="black"
+          colors={[
+            "#FF0000",
+            "#FF0000",
+            "#FFFF00",
+            "#00FF00",
+            "#00FF00",
+          ]}
         />
       </div>
 

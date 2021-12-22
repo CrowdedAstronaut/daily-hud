@@ -80,9 +80,7 @@ export default function WeatherSearch() {
               value={searchString}
             />
           </label>
-          <a href="#" type="button">
-            <img src={Search} alt="" />
-          </a>
+          <input type="image" src={Search} alt="Submit" />
         </form>
       </div>
       <div className={classes["weather-search-results"]}>

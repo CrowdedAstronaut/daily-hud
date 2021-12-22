@@ -1,3 +1,6 @@
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
+
 .fear-and-greed-container {
   /* height: 30vh; */
   /* border: 5px solid white; */
@@ -19,6 +22,10 @@
   font-size: 0.75rem;
 }
 h2 {
+  margin: 0rem;
+  font-size: 1rem;
+  font-family: "Gilroy-Semi-Bold";
+  padding-left: 1.688rem;
   text-align: left;
 }
 h3 {

@@ -83,8 +83,9 @@ export default function WeatherSearch() {
           <button type="submit">Search</button>
         </form>
       </div>
-
-      <WeatherSearchResults weather={weather} />
+      <div className="weather-search-results">
+        <WeatherSearchResults weather={weather} />
+      </div>
     </div>
   );
 }

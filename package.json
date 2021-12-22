@@ -17,6 +17,7 @@
     "react-linechart": "^1.1.12",
     "react-router-dom": "6",
     "react-scripts": "^5.0.0",
+    "react-search-field": "^2.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 import classes from "./WeatherSearch.module.css";
 import Search from "../../assets/icons/search-icon.svg";
+import SearchField from "react-search-field";
 
 //Global Variables
 const BASE_URL = "";
@@ -66,10 +67,16 @@ export default function WeatherSearch() {
         <h2>Daily Weather</h2>
       </div>
       <div className={classes["weather-form"]}>
-        <form
-          onSubmit={handleSubmit}
-          className="search-form"
-        >
+        <form onSubmit={handleSubmit} className="search-form">
+          {/* <SearchField
+            placeholder="Search..."
+            onChange={handleChange}
+            searchText="This is initial search text"
+            classNames="searchField"
+            value={searchString}
+            required
+            type="text"
+          /> */}
           <label htmlFor="">
             <input
               placeholder="Search"

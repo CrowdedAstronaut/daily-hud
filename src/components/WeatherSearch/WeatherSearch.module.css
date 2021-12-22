@@ -28,6 +28,11 @@
   align-items: center;
 }
 
+.input-box,
+textarea {
+  background: cyan;
+}
+
 .weather-container h2 {
   margin: 0rem;
   color: white;

@@ -67,7 +67,7 @@ export default function CoinSearch() {
             </span>
           </div>
           <div className={classes["coin_price_info"]}>
-            <span>46022.80</span>
+            <span>$46022.80</span>
             <span>1 BTC</span>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function CoinSearch() {
             </span>
           </div>
           <div className={classes["coin_price_info"]}>
-            <span>4022.80</span>
+            <span>$4022.80</span>
             <span>1 ETH</span>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function CoinSearch() {
             </span>
           </div>
           <div className={classes["coin_price_info"]}>
-            <span>1.02</span>
+            <span>$1.02</span>
             <span>1 ADA</span>
           </div>
         </div>

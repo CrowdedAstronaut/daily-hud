@@ -1,3 +1,5 @@
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-MediumItalic.woff");
+
 .weather-search-results {
   font-size: 1rem;
   margin: 0rem;
@@ -10,16 +12,31 @@
   font-size: 1rem;
   margin: 0rem;
 }
+.weather-city {
+  font-family: "Gilroy-MediumItalic";
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: 0rem;
+  line-height: 0.8rem;
+}
 
 .temperature-container {
   grid-column: 2;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .temperature-container h2 {
   font-size: 2rem;
+}
+
+.temperature-results {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  align-items: center;
 }
 .sun-icon img {
   width: 1rem;

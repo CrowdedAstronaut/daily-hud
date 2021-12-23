@@ -3,9 +3,9 @@ import CoinSearchResults from "./CoinSearchResults/CoinSearchResults";
 import classes from "./CoinSearch.module.css";
 import LineChart from "react-linechart";
 import "../../../node_modules/react-linechart/dist/styles.css";
-import Bitcoin from "../../assets/icons/bitcoin-icon.svg";
-import Ethereum from "../../assets/icons/ethereum-icon.svg";
-import Cardano from "../../assets/icons/cardano_icon.svg";
+import bitcoin from "../../assets/icons/bitcoin-icon.svg";
+import ethereum from "../../assets/icons/ethereum-icon.svg";
+import cardano from "../../assets/icons/cardano-icon.svg";
 import TrendingUp from "../../assets/icons/coin-price-trending-up.svg";
 import TrendingDown from "../../assets/icons/coin-price-trending-down.svg";
 
@@ -57,7 +57,7 @@ export default function CoinSearch() {
       <div className={classes["coins_container"]}>
         <div className={classes["coin_container"]}>
           <span>
-            <img src={Bitcoin} alt="" />
+            <img src={bitcoin} alt="" />
             Bitcoin <br />
             -1.43%
           </span>
@@ -73,7 +73,7 @@ export default function CoinSearch() {
         </div>
         <div className={classes["coin_container"]}>
           <span>
-            <img src={Ethereum} alt="" />
+            <img src={ethereum} alt="" />
             Ethereum <br />
             -1.43%
           </span>
@@ -89,7 +89,7 @@ export default function CoinSearch() {
         </div>
         <div className={classes["coin_container"]}>
           <span>
-            <img src={Cardano} alt="" />
+            <img src={cardano} alt="" />
             Cardano <br />
             -1.43%
           </span>

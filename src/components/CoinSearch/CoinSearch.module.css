@@ -3,26 +3,16 @@
 @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Medium.woff");
 
 .coin-search-container {
-  /* grid-column: 1; */
-  /* display: grid; */
-  /* margin-bottom: 10px; */
-  /* display: flex; */
-  /* flex-direction: column; */
   width: 20.94rem;
-  /* margin: 0.3rem; */
   position: relative;
   top: 20.31rem;
   height: 15.06rem;
-  /* margin: 0.3rem; */
-
-  /* opacity: 0.9; */
 }
 
 .coin-search-container h2 {
   font-size: 1rem;
   margin: 0rem;
   font-family: "Gilroy-Semi-Bold";
-  /* background-color: rgb(6, 97, 170); */
   color: white;
 }
 .coin-search-container p {
@@ -33,13 +23,10 @@
 }
 
 .coins-container {
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   border-radius: 0.31rem;
   grid-template-rows: 1fr 1fr 1fr;
   color: white;
-  /* border: 1px solid white; */
 }
 
 .bitcoin-container {
@@ -51,14 +38,6 @@
   margin-bottom: 0.5rem;
   font-family: "Gilroy-Medium";
   font-size: 0.875rem;
-}
-
-.bitcoin-icon-container,
-.ethereum-icon-container,
-.cardano-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .ethereum-container {
@@ -105,17 +84,3 @@
 .bitcoin-mobile-chart {
   grid-column: 2;
 }
-
-/* .bitcoin_mobile_chart {
-  width: 6rem;
-}
-.bitcoin_mobile_chart {
-  width: 6rem;
-} */
-
-/* .coin_price_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */

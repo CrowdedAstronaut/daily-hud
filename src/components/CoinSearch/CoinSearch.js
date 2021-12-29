@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import CoinSearchResults from "./CoinSearchResults/CoinSearchResults";
 import classes from "./CoinSearch.module.css";
 import LineChart from "react-linechart";
-import "../../../node_modules/react-linechart/dist/styles.css";
 import bitcoin from "../../assets/icons/bitcoin-icon.svg";
 import ethereum from "../../assets/icons/ethereum-icon.svg";
 import cardano from "../../assets/icons/cardano-icon.svg";
@@ -21,22 +20,19 @@ export default function CoinSearch() {
     format: "&date_format=us",
   };
 
-  function handleChange(event) {
-    setSearchString(event.target.value);
-  }
+  // function handleChange(event) {
+  //   setSearchString(event.target.value);
+  // }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    getCoin(searchString);
-    setSearchString("");
-  }
-
-  // ${searchString},us${CoinSearch.units}${CoinSearch.apikey}
+  // function handleSubmit(event) {
+  //   event.preventDefault();
+  //   getCoin(searchString);
+  //   setSearchString("");
+  // }
 
   async function getCoin() {
     const url = `${coinSearch.api}${searchString}`;
 
-    // "https://api.alternative.me/fng/?limit=10&date_format=us";
     console.log(url);
     try {
       const response = await fetch(url);

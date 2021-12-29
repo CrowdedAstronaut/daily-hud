@@ -117,8 +117,8 @@ export default function CoinSearch() {
               </div>
             </div>
             <div className={classes["cardano-price-info"]}>
-              <div>$1.02</div>
-              <div>1 ADA</div>
+              <div>$4022.80</div>
+              <div>1 ETH</div>
             </div>
           </div>
         </div>

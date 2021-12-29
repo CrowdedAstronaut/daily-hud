@@ -55,7 +55,7 @@
 
 .bitcoin-icon-container,
 .ethereum-icon-container,
-.cardano-container {
+.cardano-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;

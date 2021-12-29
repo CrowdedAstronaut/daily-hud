@@ -49,61 +49,80 @@ export default function CoinSearch() {
   }
 
   return (
-    <div className={classes["coin-search-container"]}>
-      <div className={classes["coin-header"]}>
-        <h2>Crypto Dashboard</h2>
-      </div>
+    <>
+      <div className={classes["coin-search-container"]}>
+        <div className={classes["coin-header"]}>
+          <h2>Crypto Dashboard</h2>
+        </div>
 
-      <div className={classes["coins_container"]}>
-        <div className={classes["coin_container"]}>
-          <span>
-            <img src={bitcoin} alt="" />
-            Bitcoin <br />
-            -1.43%
-          </span>
-          <div className={classes["coin_mobile_chart"]}>
-            <span>
-              <img src={TrendingUp} alt="" />
-            </span>
+        <div className={classes["coins-container"]}>
+          <div className={classes["bitcoin-container"]}>
+            <div
+              className={classes["bitcoin-icon-container"]}
+            >
+              <img src={bitcoin} alt="" />
+              Bitcoin <br />
+              -1.43%
+            </div>
+
+            <div
+              className={classes["bitcoin-mobile-chart"]}
+            >
+              <div>
+                <img src={TrendingUp} alt="" />
+              </div>
+            </div>
+            <div className={classes["bitcoin-price-info"]}>
+              <div>$46022.80</div>
+              <div>1 BTC</div>
+            </div>
           </div>
-          <div className={classes["coin_price_info"]}>
-            <span>$46022.80</span>
-            <span>1 BTC</span>
+
+          <div className={classes["ethereum-container"]}>
+            <div
+              className={classes["ethereum-icon-container"]}
+            >
+              <img src={ethereum} alt="" />
+              Ethereum <br />
+              -1.43%
+            </div>
+
+            <div
+              className={classes["ethereum-mobile-chart"]}
+            >
+              <div>
+                <img src={TrendingDown} alt="" />
+              </div>
+            </div>
+            <div className={classes["ethereum-price-info"]}>
+              <div>$4022.80</div>
+              <div>1 ETH</div>
+            </div>
           </div>
-        </div>
-        <div className={classes["coin_container"]}>
-          <span>
-            <img src={ethereum} alt="" />
-            Ethereum <br />
-            -1.43%
-          </span>
-          <div className={classes["coin_mobile_chart"]}>
-            <span>
-              <img src={TrendingDown} alt="" />
-            </span>
-          </div>
-          <div className={classes["coin_price_info"]}>
-            <span>$4022.80</span>
-            <span>1 ETH</span>
-          </div>
-        </div>
-        <div className={classes["coin_container"]}>
-          <span>
-            <img src={cardano} alt="" />
-            Cardano <br />
-            -1.43%
-          </span>
-          <div className={classes["coin_mobile_chart"]}>
-            <span>
-              <img src={TrendingUp} alt="" />
-            </span>
-          </div>
-          <div className={classes["coin_price_info"]}>
-            <span>$1.02</span>
-            <span>1 ADA</span>
+
+          <div className={classes["cardano-container"]}>
+            <div
+              className={classes["cardano-icon-container"]}
+            >
+              <img src={cardano} alt="" />
+              Cardano <br />
+              -1.43%
+            </div>
+
+            <div
+              className={classes["cardano-mobile-chart"]}
+            >
+              <div>
+                <img src={TrendingUp} alt="" />
+              </div>
+            </div>
+            <div className={classes["cardano-price-info"]}>
+              <div>$1.02</div>
+              <div>1 ADA</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

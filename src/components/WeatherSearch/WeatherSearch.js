@@ -67,7 +67,10 @@ export default function WeatherSearch() {
         <h2>Daily Weather</h2>
       </div>
       <div className={classes["weather-form"]}>
-        <form onSubmit={handleSubmit} className="search-form">
+        <form
+          onSubmit={handleSubmit}
+          className={classes["search-form"]}
+        >
           {/* <SearchField
             placeholder="Search..."
             onChange={handleChange}
@@ -87,7 +90,9 @@ export default function WeatherSearch() {
               value={searchString}
             />
           </label>
-          <input type="image" src={Search} alt="Submit" />
+          <div>
+            <input type="image" src={Search} alt="Submit" />
+          </div>
         </form>
       </div>
       <div className={classes["weather-search-results"]}>

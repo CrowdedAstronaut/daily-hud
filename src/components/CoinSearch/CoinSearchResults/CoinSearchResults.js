@@ -28,9 +28,6 @@ export default function CoinSearchResults({ coins }) {
     return (
       <div className={classes["coin-search-container"]}>
         <h2>Here is the coin search results container</h2>
-        {/* <LineChart /> */}
-
-        {/* <p>{coins.data[1027].symbol}</p> */}
       </div>
     );
   }

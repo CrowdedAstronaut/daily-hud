@@ -50,6 +50,10 @@ textarea {
   font-size: 0.9rem;
 }
 
+.search-form {
+  display: flex;
+}
+
 .weather-search-results {
   background-color: #171717;
   /* background-color: orange; */

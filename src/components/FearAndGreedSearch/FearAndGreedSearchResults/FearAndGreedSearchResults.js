@@ -17,10 +17,10 @@ export default function FearAndGreedSearchResults({
           percent={fearAndGreed.data[0].value * 0.01}
           arcWidth={0.1}
           animate={false}
-          needleColor="black"
+          needleColor="grey"
           arcPadding={0.01}
           cornerRadius={1}
-          needleBaseColor="black"
+          needleBaseColor="grey"
           colors={[
             "#FF0000",
             "#FF0000",

@@ -22,9 +22,11 @@ export default function CoinSearchResults({ coins }) {
           </div>
 
           <div className={classes["bitcoin-mobile-chart"]}>
-            <div>
+            {coins[0].price_change_percentage_24h > 1 ? (
               <img src={TrendingUp} alt="" />
-            </div>
+            ) : (
+              <img src={TrendingDown} />
+            )}
           </div>
           <div className={classes["bitcoin-price-info"]}>
             <div>$ {coins[0].current_price}</div>
@@ -42,9 +44,11 @@ export default function CoinSearchResults({ coins }) {
           </div>
 
           <div className={classes["ethereum-mobile-chart"]}>
-            <div>
-              <img src={TrendingDown} alt="" />
-            </div>
+            {coins[1].price_change_percentage_24h > 1 ? (
+              <img src={TrendingUp} alt="" />
+            ) : (
+              <img src={TrendingDown} />
+            )}
           </div>
           <div className={classes["ethereum-price-info"]}>
             <div>${coins[1].current_price}</div>
@@ -63,9 +67,11 @@ export default function CoinSearchResults({ coins }) {
           </div>
 
           <div className={classes["cardano-mobile-chart"]}>
-            <div>
+            {coins[2].price_change_percentage_24h > 1 ? (
               <img src={TrendingUp} alt="" />
-            </div>
+            ) : (
+              <img src={TrendingDown} />
+            )}
           </div>
           <div className={classes["cardano-price-info"]}>
             <div>$ {coins[2].current_price}</div>

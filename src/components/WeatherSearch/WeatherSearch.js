@@ -3,14 +3,11 @@ import { useState, useEffect } from "react";
 import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 import classes from "./WeatherSearch.module.css";
 import Search from "../../assets/icons/search-icon.svg";
-import SearchField from "react-search-field";
 
 //Global Variables
-const BASE_URL = "";
 const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
-console.log(API_KEY);
 
-//API
+//APIS
 
 export default function WeatherSearch() {
   const [weather, setWeather] = useState([]);
@@ -71,15 +68,6 @@ export default function WeatherSearch() {
           onSubmit={handleSubmit}
           className={classes["search-form"]}
         >
-          {/* <SearchField
-            placeholder="Search..."
-            onChange={handleChange}
-            searchText="This is initial search text"
-            classNames="searchField"
-            value={searchString}
-            required
-            type="text"
-          /> */}
           <label htmlFor="">
             <input
               placeholder="Search"

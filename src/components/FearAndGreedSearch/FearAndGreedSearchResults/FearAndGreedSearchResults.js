@@ -14,7 +14,7 @@ export default function FearAndGreedSearchResults({
         <GaugeChart
           id="gauge-chart2"
           nrOfLevels={5}
-          percent={fearAndGreed.data[0].value}
+          percent={fearAndGreed.data[0].value * 0.01}
           arcWidth={0.1}
           animate={false}
           needleColor="black"
@@ -30,7 +30,6 @@ export default function FearAndGreedSearchResults({
           ]}
         />
         <div>
-          <p> {fearAndGreed.data[0].value}</p>
           <p>
             {" "}
             {fearAndGreed.data[0].value_classification}

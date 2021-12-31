@@ -14,12 +14,13 @@ export default function CoinSearch() {
   }, []);
 
   const coinSearch = {
-    api: "https://api.alternative.me/v2/ticker/?structure=array",
-    // format: "&date_format=us",
+    api: "https://api.coingecko.com/api/v3/coins/markets",
+    format: "?vs_currency=usd",
+    ids: "&ids=bitcoin,ethereum,cardano",
   };
 
   async function getCoins() {
-    const url = `${coinSearch.api}`;
+    const url = `${coinSearch.api}${coinSearch.format}${coinSearch.ids}`;
 
     console.log(url);
     try {

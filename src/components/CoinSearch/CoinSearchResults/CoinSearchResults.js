@@ -17,8 +17,8 @@ export default function CoinSearchResults({ coins }) {
             className={classes["bitcoin-icon-container"]}
           >
             <img src={bitcoin} alt="" />
-            Bitcoin <br />
-            -1.43%
+            {coins[0].id} <br />
+            {coins[0].price_change_percentage_24h} %
           </div>
 
           <div className={classes["bitcoin-mobile-chart"]}>
@@ -27,7 +27,7 @@ export default function CoinSearchResults({ coins }) {
             </div>
           </div>
           <div className={classes["bitcoin-price-info"]}>
-            <div>$46022.80</div>
+            <div>$ {coins[0].current_price}</div>
             <div>1 BTC</div>
           </div>
         </div>
@@ -37,8 +37,8 @@ export default function CoinSearchResults({ coins }) {
             className={classes["ethereum-icon-container"]}
           >
             <img src={ethereum} alt="" />
-            Ethereum <br />
-            -1.43%
+            {coins[1].id} <br />
+            {coins[1].price_change_percentage_24h} %
           </div>
 
           <div className={classes["ethereum-mobile-chart"]}>
@@ -47,7 +47,7 @@ export default function CoinSearchResults({ coins }) {
             </div>
           </div>
           <div className={classes["ethereum-price-info"]}>
-            <div>$4022.80</div>
+            <div>${coins[1].current_price}</div>
             <div>1 ETH</div>
           </div>
         </div>
@@ -57,8 +57,9 @@ export default function CoinSearchResults({ coins }) {
             className={classes["cardano-icon-container"]}
           >
             <img src={cardano} alt="" />
-            Cardano <br />
-            -1.43%
+            {coins[2].id}
+            <br />
+            {coins[2].price_change_percentage_24h} %
           </div>
 
           <div className={classes["cardano-mobile-chart"]}>
@@ -67,8 +68,8 @@ export default function CoinSearchResults({ coins }) {
             </div>
           </div>
           <div className={classes["cardano-price-info"]}>
-            <div>$4022.80</div>
-            <div>1 ETH</div>
+            <div>$ {coins[2].current_price}</div>
+            <div>1 ADA</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./FearAndGreedSearchResults.module.css";
+import GaugeChart from "react-gauge-chart";
 
 export default function FearAndGreedSearchResults({
   fearAndGreed,
@@ -9,26 +10,32 @@ export default function FearAndGreedSearchResults({
     return <h2>No Results</h2>;
   } else {
     return (
-      <div className={classes["fear-and-greed-results"]}>
-        <p> Today's Value: {fearAndGreed.data[0].value}</p>
-        {/* <h2> Fear and Greed Index </h2>
-    
-        <p style={{ color: "lime" }}>
-          Today's Classification:{" "}
-          {fearAndGreed.data[0].value_classification}
-        </p>
-        <p>
-          {" "}
-          Yesterday's Value: {fearAndGreed.data[1].value}
-        </p>
-        <p style={{ color: "lime" }}>
-          Yesterday's Classification:{" "}
-          {fearAndGreed.data[1].value_classification}
-        </p> */}
-        {/* <p style={{ color: "blue" }}>
-          Before Yesterday's Classification:{" "}
-          {fearAndGreed.data[2].value_classification}
-        </p> */}
+      <div className={classes["fear-and-greed-chart"]}>
+        <GaugeChart
+          id="gauge-chart2"
+          nrOfLevels={5}
+          percent={0.1}
+          arcWidth={0.1}
+          animate={false}
+          needleColor="black"
+          arcPadding={0.01}
+          cornerRadius={1}
+          needleBaseColor="black"
+          colors={[
+            "#FF0000",
+            "#FF0000",
+            "#FFFF00",
+            "#00FF00",
+            "#00FF00",
+          ]}
+        />
+        <div>
+          <p> {fearAndGreed.data[0].value}</p>
+          <p>
+            {" "}
+            {fearAndGreed.data[0].value_classification}
+          </p>
+        </div>
       </div>
     );
   }

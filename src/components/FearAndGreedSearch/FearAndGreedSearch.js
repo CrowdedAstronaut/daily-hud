@@ -7,38 +7,34 @@ import GaugeChart from "react-gauge-chart";
 console.log(
   "Hello from the fear and greed search component"
 );
-export default function FearAndGreedSearch(fearAndGreed) {
-  // const [fearAndGreed, setFearAndGreed] = useEffect([]);
+export default function FearAndGreedSearch() {
+  const [fearAndGreed, setFearAndGreed] = useState([]);
   // const [searchString, setSearchString] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
+
+  useEffect(() => {
+    getFearAndGreed();
+  }, []);
 
   const fearAndGreedSearch = {
     api: "https://api.alternative.me/fng/?limit=2",
     format: "&date_format=us",
   };
 
-  // function handleChange(event) {
-  //   setSearchString(event.target.value);
-  // }
-
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-  //   getFearAndGreed(searchString);
-  //   setSearchString("");
-  // }
-
-  // ${searchString},us${fearAndGreedSearch.units}${fearAndGreedSearch.apikey}
-
-  useEffect(() => {
+  async function getFearAndGreed() {
     const url = `${fearAndGreedSearch.api}`;
-    const getFearAndGreed = async () => {
+
+    console.log(url);
+    try {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
-    };
-    getFearAndGreed();
-  }, []);
+      setFearAndGreed(data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
   // "https://api.alternative.me/fng/?limit=10&date_format=us";
   // console.log(url);
@@ -57,46 +53,11 @@ export default function FearAndGreedSearch(fearAndGreed) {
       <div className={classes["fear-and-greed-header"]}>
         <h2>Fear & Greed</h2>
       </div>
-      <div className={classes["fear-and-greed-chart"]}>
-        <GaugeChart
-          id="gauge-chart2"
-          nrOfLevels={5}
-          percent={0.5}
-          arcWidth={0.1}
-          animate={false}
-          needleColor="black"
-          arcPadding={0.01}
-          cornerRadius={1}
-          needleBaseColor="black"
-          colors={[
-            "#FF0000",
-            "#FF0000",
-            "#FFFF00",
-            "#00FF00",
-            "#00FF00",
-          ]}
+      <div className={classes["fear-and-greed-results"]}>
+        <FearAndGreedSearchResults
+          fearAndGreed={fearAndGreed}
         />
       </div>
-
-      {/* <div className={classes["fear-and-greed-form"]}>
-        <form
-          onSubmit={handleSubmit}
-          className="search-form"
-        >
-          <input
-            placeholder="Search"
-            type="text"
-            name="searchString"
-            required
-            onChange={handleChange}
-            value={searchString}
-          />
-          <button type="submit">Search</button>
-        </form>
-      </div> */}
-      {/* <FearAndGreedSearchResults
-        fearAndGreed={fearAndGreed}
-      /> */}
     </div>
   );
 }

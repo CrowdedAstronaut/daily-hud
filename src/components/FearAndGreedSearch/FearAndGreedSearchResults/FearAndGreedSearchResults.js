@@ -28,6 +28,7 @@ export default function FearAndGreedSearchResults({
             "#00FF00",
             "#00FF00",
           ]}
+          style={{ width: "21.875rem" }}
         />
         <div>
           <p>

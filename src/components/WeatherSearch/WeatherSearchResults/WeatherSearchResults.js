@@ -13,14 +13,11 @@ export default function WeatherSearchResults({ weather }) {
     return (
       <>
         <div className={classes["weather-search-results"]}>
-          <h4 className={classes["weather-city"]}>
-            {weather.name}
-          </h4>
+          <h4 className={classes["weather-city"]}>{weather.name}</h4>
           <p>
             {" "}
             <img src={clouds} alt="" />
-            {weather.weather[0].description}{" "}
-            <img src={humidity} alt="" />
+            {weather.weather[0].description} <img src={humidity} alt="" />
             {weather.main.humidity} %
           </p>
 
@@ -29,15 +26,11 @@ export default function WeatherSearchResults({ weather }) {
           <p>humidity: {weather.main.humidity}%</p> */}
           <p>
             <img src={sunrise} alt="sunrise Icon" />{" "}
-            {new Date(
-              weather.sys.sunrise * 1000
-            ).toLocaleTimeString("en-IN")}
+            {new Date(weather.sys.sunrise * 1000).toLocaleTimeString("en-IN")}
           </p>
           <p>
             <img src={sunset} alt="sunset Icon" />{" "}
-            {new Date(
-              weather.sys.sunset * 1000
-            ).toLocaleTimeString("en-IN")}
+            {new Date(weather.sys.sunset * 1000).toLocaleTimeString("en-IN")}
           </p>
         </div>
         <div className={classes["temperature-container"]}>
@@ -47,7 +40,7 @@ export default function WeatherSearchResults({ weather }) {
               <img
                 src={arrow}
                 alt="low temperature"
-                style={{ transform: `rotate(${0}deg)` }}
+                style={{ transform: `rotate(${180}deg)` }}
               />{" "}
               {weather.main.temp_min}° F
             </p>

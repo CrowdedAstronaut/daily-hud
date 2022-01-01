@@ -34,7 +34,10 @@ textarea {
 }
 
 .weather-container h2 {
-  margin: 0rem;
+  font-size: 1rem;
+  font-family: "Gilroy-Semi-Bold";
+  /* padding-left: 1.688rem; */
+  text-align: left;
   color: white;
 }
 .weather-container p {

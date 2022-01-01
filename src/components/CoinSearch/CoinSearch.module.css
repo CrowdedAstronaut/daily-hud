@@ -9,15 +9,24 @@
   height: 15.06rem;
 }
 
-.coin-search-container h2 {
+.coin-search-container h2,
+h3 {
   font-size: 1rem;
   margin: 0rem;
   font-family: "Gilroy-Semi-Bold";
   color: white;
+  text-align: left;
 }
 .coin-search-container p {
   font-size: 0.75rem;
   margin: 0rem;
   font-family: "Gilroy-Regular";
   color: white;
+}
+
+.fear-and-greed-container p {
+  font-size: 0.75rem;
+}
+.fear-and-greed-chart {
+  background-color: #171717;
 }

@@ -6,7 +6,7 @@
   /* border: 5px solid white; */
   position: absolute;
   width: 20.94rem;
-  top: 36.4rem;
+  top: 31.4rem;
   border-radius: 0.31rem;
   color: white;
   align-content: center;
@@ -28,7 +28,4 @@ h3 {
 
 .fear-and-greed-container p {
   font-size: 0.75rem;
-}
-.fear-and-greed-chart {
-  background-color: #171717;
 }

@@ -19,7 +19,7 @@ export default function FearAndGreedSearchResults({ fearAndGreed }) {
           arcPadding={0.01}
           cornerRadius={1}
           needleBaseColor="grey"
-          colors={["#FF0000", "#FF0000", "#FFFF00", "#00FF00", "#00FF00"]}
+          colors={["#8B0000", "#AA4A44", "#E4D00A", "#AFE1AF", "#097969"]}
           style={{ width: "21.875rem" }}
         />
         <div className={classes["fear-and-greed-classification"]}>

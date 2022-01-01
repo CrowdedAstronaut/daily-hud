@@ -23,8 +23,14 @@ export default function FearAndGreedSearchResults({ fearAndGreed }) {
           style={{ width: "21.875rem" }}
         />
         <div className={classes["fear-and-greed-classification"]}>
-          {"FINCON: "}
-          {fearAndGreed.data[0].value_classification}
+          <p>
+            {"FINCON: "}
+            {fearAndGreed.data[0].value_classification}
+          </p>
+          {/* <p>
+            {"Update: "}
+            {fearAndGreed.data[0].time_until_update}
+          </p> */}
         </div>
       </div>
     );

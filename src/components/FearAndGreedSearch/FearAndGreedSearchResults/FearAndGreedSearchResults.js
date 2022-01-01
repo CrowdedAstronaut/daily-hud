@@ -2,9 +2,7 @@ import React from "react";
 import classes from "./FearAndGreedSearchResults.module.css";
 import GaugeChart from "react-gauge-chart";
 
-export default function FearAndGreedSearchResults({
-  fearAndGreed,
-}) {
+export default function FearAndGreedSearchResults({ fearAndGreed }) {
   console.log(fearAndGreed);
   if (fearAndGreed.length === 0) {
     return <h2>No Results</h2>;
@@ -21,20 +19,12 @@ export default function FearAndGreedSearchResults({
           arcPadding={0.01}
           cornerRadius={1}
           needleBaseColor="grey"
-          colors={[
-            "#FF0000",
-            "#FF0000",
-            "#FFFF00",
-            "#00FF00",
-            "#00FF00",
-          ]}
+          colors={["#FF0000", "#FF0000", "#FFFF00", "#00FF00", "#00FF00"]}
           style={{ width: "21.875rem" }}
         />
-        <div>
-          <p>
-            {" "}
-            {fearAndGreed.data[0].value_classification}
-          </p>
+        <div className={classes["fear-and-greed-classification"]}>
+          {"FINCON: "}
+          {fearAndGreed.data[0].value_classification}
         </div>
       </div>
     );

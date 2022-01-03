@@ -47,7 +47,7 @@ export default function CoinSearchResults({ coins }) {
             {coins[1].price_change_percentage_24h > 1 ? (
               <img src={TrendingUp} alt="" />
             ) : (
-              <img src={TrendingDown} />
+              <img src={TrendingDown} alt="" />
             )}
           </div>
           <div className={classes["ethereum-price-info"]}>

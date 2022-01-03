@@ -13,11 +13,14 @@ export default function WeatherSearchResults({ weather }) {
     return (
       <>
         <div className={classes["weather-search-results"]}>
-          <h4 className={classes["weather-city"]}>{weather.name}</h4>
+          <h4 className={classes["weather-city"]}>
+            {weather.name}
+          </h4>
           <p>
             {" "}
             <img src={clouds} alt="" />
-            {weather.weather[0].description} <img src={humidity} alt="" />
+            {weather.weather[0].description}{" "}
+            <img src={humidity} alt="" />
             {weather.main.humidity} %
           </p>
 
@@ -26,15 +29,22 @@ export default function WeatherSearchResults({ weather }) {
           <p>humidity: {weather.main.humidity}%</p> */}
           <p>
             <img src={sunrise} alt="sunrise Icon" />{" "}
-            {new Date(weather.sys.sunrise * 1000).toLocaleTimeString("en-IN")}
+            {new Date(
+              weather.sys.sunrise * 1000
+            ).toLocaleTimeString("en-IN")}
           </p>
           <p>
             <img src={sunset} alt="sunset Icon" />{" "}
-            {new Date(weather.sys.sunset * 1000).toLocaleTimeString("en-IN")}
+            {new Date(
+              weather.sys.sunset * 1000
+            ).toLocaleTimeString("en-IN")}
           </p>
         </div>
         <div className={classes["temperature-container"]}>
-          <h2> {weather.main.temp}° F</h2>
+          <h2 style={{ fontSize: "2rem" }}>
+            {" "}
+            {weather.main.temp}° F
+          </h2>
           <div className={classes["temperature-results"]}>
             <p>
               <img

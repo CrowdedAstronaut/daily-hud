@@ -28,6 +28,7 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 ## Home Page
 ### Mobile Preview
 ![Mobile Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-mobile-home-screen.png)
+![Mobile Gif](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/gifs/daily-hud.gif)
 ### Desktop Preview
 ![Desktop Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-desktop-home-screen.png)
 

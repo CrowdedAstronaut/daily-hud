@@ -10,7 +10,6 @@ daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go
 - [Links](#links)
 - [Installation](#install)
 
-
 <hr />
 <br />
 
@@ -30,17 +29,22 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 - CSS Grid
 - React.js
 
-
 ## Home Page
+
 ### Mobile Preview
+
 ![Mobile Gif](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/gifs/daily-hud.gif)
+
 ### Desktop Preview
+
 ![Desktop Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-desktop-home-screen.png)
 
 </br>
 
 # User Stories <a name="userstories"></a>
+
 ### As a user of daily-HUD, I would like to be able to:
+
 - View the optimal layout depending on their device's screen size
 - See different data visuializations depending on the states for interactive elements
 - View the weather data by geolocation and by zipcode
@@ -84,7 +88,7 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
         <img alt="Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
         <img alt="Trello" src="https://img.shields.io/badge/Trello-%23026AA7.svg?&style=for-the-badge&logo=Trello&logoColor=white"/>
         <img alt="Zoom" src="https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white"/>
-                                                                                                                     <img alt="Slack" src="https://img.shields.io/badge/Slack-%23026AA7.svg?&style=for-the-badge&logo=Slack&logoColor=white"/>
+        <img alt="Slack" src="https://img.shields.io/badge/Slack-%23026AA7.svg?&style=for-the-badge&logo=Slack&logoColor=white"/>
       </td>
     </tr>
     <tr>
@@ -99,17 +103,19 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 <hr />
 <br />
 
-
 ## Installation
 
-yarn install
+daily-HUD requires either npm or yarn to run in development
+
+Download the repo using git
+git clone https://github.com/CrowdedAstronaut/daily-hud.git
+Install dependencies
+npm or yarn install
+
+Start the Server
+npm or yarn start
 
 ### Links
 
 - GitHub URL: [](https://github.com/CrowdedAstronaut/daily-hud)
 - Live Site URL: [](https://daily-hud.netlify.app/)
-
-
-
-
-

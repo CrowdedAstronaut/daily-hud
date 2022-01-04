@@ -5,44 +5,49 @@ daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go
 # Table of Contents
 
 - [About this project](#about)
-- [Workflow](#workflow)
+- [User Stories](#userstories)
 - [Technologies](#technologies)
 - [Links](#links)
 - [Installation](#install)
-- [APIs](#apis)
+
 
 <hr />
 <br />
 
 # About the Project <a name="about"></a>
 
-daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the fear-and-greed index. I prioritized semantic naming conventions, hierarchies and aria-labels to ensure daily-HUD works well with assistive technologies (ie screen readers).
+daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the fear-and-greed index. This project was an exercise in:
 
+- Mobile First Methodology
+- Pixel Perfect Design Implementation
+- Making API calls to 3 seperate sources for data
+- Securely passing API keys to their sources
+- Rendering conditional styling to the user based upon user input
+- Proper use of useState and useEffect Hooks
+- CSS custom properties & CSS modules in React
+- Semantic naming conventions
+- Flexbox
+- CSS Grid
+- React.js
 
-## User Stories
-
-- View the optimal layout depending on their device's screen size
-- See different data visuializations depending on the states for interactive elements
--
 
 ## Home Page
 ### Mobile Preview
-![Mobile Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-mobile-home-screen.png)
 ![Mobile Gif](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/gifs/daily-hud.gif)
 ### Desktop Preview
 ![Desktop Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-desktop-home-screen.png)
 
 </br>
 
-# Workflow <a name="workflow"></a>
+# User Stories <a name="userstories"></a>
+### As a user of daily-HUD, I would like to be able to:
+- View the optimal layout depending on their device's screen size
+- See different data visuializations depending on the states for interactive elements
+- View the weather data by geolocation and by zipcode
+- View the current price and the 24 hour trend in Bitcoin, Ethereum, and Cardano
+- View the current state of the Fear & Greed index which is updated dynamically one time daily.
 
-Our team used Agile workflow for this sprint.
-
-## Version Control
-
-I implemented Git Feature Branch Workflow in order to manage this project.
-<br />
-
+</br>
 # Technologies <a name="technologies"></a>
 
 <table>
@@ -94,27 +99,6 @@ I implemented Git Feature Branch Workflow in order to manage this project.
 <hr />
 <br />
 
-## Learning Experience
-
-## Setting Up Project
-
-## Building the Core Structure
-
-React Components The Component Hierarchy diagram, above, represents of how the components are structured in our app.
-
-Our API contains 2 models
-Post: image_url, author, location, post_time, caption_body
-Comment: author, caption_body, post_time
-
-## Navigation
-
-## User Experience - Mobile First Methodology
-
-## Future Directions
-
-User Stories (Stretch Goals)
-
-## Accomplishments
 
 ## Installation
 
@@ -123,32 +107,9 @@ yarn install
 ### Links
 
 - GitHub URL: [](https://github.com/CrowdedAstronaut/daily-hud)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [](https://daily-hud.netlify.app/)
 
-## My process
 
-### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- React.js
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```scss
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 

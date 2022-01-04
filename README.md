@@ -15,7 +15,7 @@ daily-HUD(Heads Up Display) is a daily dashboard for the crypto trader on-the-go
 
 # About the Project <a name="about"></a>
 
-daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the fear-and-greed index. This project was an exercise in:
+daily-HUD is a fully rendered, interactive, mobile first app that allows users to learn more about the weather, details about different cryptocurrencies, and the current state of the [fear-and-greed](https://alternative.me/crypto/fear-and-greed-index/) index. This project was an exercise in:
 
 - Mobile First Methodology
 - Pixel Perfect Design Implementation

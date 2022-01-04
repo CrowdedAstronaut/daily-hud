@@ -103,19 +103,27 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 <hr />
 <br />
 
-## Installation
-
-daily-HUD requires either npm or yarn to run in development
-
+## Installation  <a name="install"></a>
+```shell
 Download the repo using git
 git clone https://github.com/CrowdedAstronaut/daily-hud.git
-Install dependencies
-npm or yarn install
+```
 
-Start the Server
-npm or yarn start
+  Navigate into the site's directory and install dependencies.
+```shell
+   cd daily-HUD/
+yarn install
+```
+
+Start the Server.
+```shell
+yarn start
+```
+ **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
 
 ### Links
 
-- GitHub URL: [](https://github.com/CrowdedAstronaut/daily-hud)
-- Live Site URL: [](https://daily-hud.netlify.app/)
+- GitHub URL: [Github](https://github.com/CrowdedAstronaut/daily-hud)
+- Live Site URL: [Live Site](https://daily-hud.netlify.app/)

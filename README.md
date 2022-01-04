@@ -113,7 +113,7 @@ git clone https://github.com/CrowdedAstronaut/daily-hud.git
 Navigate into the site's directory and install dependencies.
 
 ```shell
-   cd daily-HUD/
+cd daily-HUD/
 yarn install
 ```
 

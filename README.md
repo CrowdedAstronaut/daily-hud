@@ -38,7 +38,7 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 ### Desktop Preview
 
 ![Desktop Preview](https://raw.githubusercontent.com/CrowdedAstronaut/daily-hud/main/src/assets/images/daily-HUD-desktop-home-screen.png)
-
+(The Desktop view is in development.)
 </br>
 
 # User Stories <a name="userstories"></a>
@@ -103,25 +103,28 @@ daily-HUD is a fully rendered, interactive, mobile first app that allows users t
 <hr />
 <br />
 
-## Installation  <a name="install"></a>
+## Installation <a name="install"></a>
+
 ```shell
 Download the repo using git
 git clone https://github.com/CrowdedAstronaut/daily-hud.git
 ```
 
-  Navigate into the site's directory and install dependencies.
+Navigate into the site's directory and install dependencies.
+
 ```shell
    cd daily-HUD/
 yarn install
 ```
 
 Start the Server.
+
 ```shell
 yarn start
 ```
- **Open the source code and start editing!**
 
-    Your site is now running at `http://localhost:8000`!
+**Open the source code and start editing!**
+Your site is now running at `http://localhost:3000`!
 
 ### Links
 

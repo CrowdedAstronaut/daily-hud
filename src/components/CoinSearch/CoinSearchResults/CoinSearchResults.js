@@ -17,8 +17,13 @@ export default function CoinSearchResults({ coins }) {
             className={classes["bitcoin-icon-container"]}
           >
             <img src={bitcoin} alt="" />
-            {coins[0].id} <br />
-            {coins[0].price_change_percentage_24h} %
+            {coins[0].id.charAt(0).toUpperCase() +
+              coins[0].id.slice(1)}{" "}
+            <br />
+            {coins[0].price_change_percentage_24h.toFixed(
+              3
+            )}{" "}
+            %
           </div>
 
           <div className={classes["bitcoin-mobile-chart"]}>
@@ -39,8 +44,13 @@ export default function CoinSearchResults({ coins }) {
             className={classes["ethereum-icon-container"]}
           >
             <img src={ethereum} alt="" />
-            {coins[1].id} <br />
-            {coins[1].price_change_percentage_24h} %
+            {coins[1].id.charAt(0).toUpperCase() +
+              coins[1].id.slice(1)}{" "}
+            <br />
+            {coins[1].price_change_percentage_24h.toFixed(
+              3
+            )}{" "}
+            %
           </div>
 
           <div className={classes["ethereum-mobile-chart"]}>
@@ -61,9 +71,13 @@ export default function CoinSearchResults({ coins }) {
             className={classes["cardano-icon-container"]}
           >
             <img src={cardano} alt="" />
-            {coins[2].id}
+            {coins[2].id.charAt(0).toUpperCase() +
+              coins[2].id.slice(1)}
             <br />
-            {coins[2].price_change_percentage_24h} %
+            {coins[2].price_change_percentage_24h.toFixed(
+              3
+            )}{" "}
+            %
           </div>
 
           <div className={classes["cardano-mobile-chart"]}>

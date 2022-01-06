@@ -1,6 +1,6 @@
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
+/* @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
 @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Medium.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Medium.woff"); */
 
 .coin-search-container {
   width: 20.94rem;
@@ -13,14 +13,16 @@
 h3 {
   font-size: 1rem;
   margin: 0rem;
-  font-family: "Gilroy-Semi-Bold";
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   color: white;
   text-align: left;
 }
 .coin-search-container p {
   font-size: 0.75rem;
   margin: 0rem;
-  font-family: "Gilroy-Regular";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: white;
 }
 

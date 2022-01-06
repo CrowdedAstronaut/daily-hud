@@ -29,7 +29,10 @@ export default function FearAndGreedSearchResults({
             "#AFE1AF",
             "#097969",
           ]}
-          style={{ width: "21.875rem" }}
+          style={{
+            width: "21.875rem",
+            fontFamily: '"Roboto", sans-serif',
+          }}
         />
         <div
           className={

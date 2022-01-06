@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: Gilroy-Bold;
   src: url(../../assets/fonts/Gilroy-Bold.woff);
-}
+} */
 
 .header {
   position: absolute;
@@ -11,7 +11,8 @@
   left: 1.25rem;
   top: 1rem;
   background-color: #171717;
-  font-family: Gilroy-Bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   color: white;
   /* border: 1px solid white; */
 }

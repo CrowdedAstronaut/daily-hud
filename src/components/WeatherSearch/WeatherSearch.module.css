@@ -1,5 +1,5 @@
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
+/* @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
+@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff"); */
 
 .weather-container {
   position: absolute;
@@ -35,7 +35,8 @@ textarea {
 
 .weather-container h2 {
   font-size: 1rem;
-  font-family: "Gilroy-Semi-Bold";
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
   /* padding-left: 1.688rem; */
   text-align: left;
   color: white;
@@ -43,12 +44,14 @@ textarea {
 .weather-container p {
   font-size: 0.75rem;
   margin: 0rem;
-  font-family: "Gilroy-Regular";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: white;
 }
 
 .weather-city p {
-  font-family: "Gilroy-MediumItalic";
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-style: italic;
   font-size: 0.9rem;
 }

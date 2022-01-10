@@ -2,14 +2,15 @@
   font-family: Gilroy-Bold;
   src: url(../../assets/fonts/Gilroy-Bold.woff);
 } */
-
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 .header {
-  position: absolute;
   text-align: left;
   display: flex;
   flex-direction: column;
-  left: 1.25rem;
-  top: 1rem;
   background-color: #171717;
   font-family: "Roboto", sans-serif;
   font-weight: 600;

@@ -30,7 +30,7 @@ export default function FearAndGreedSearchResults({
             "#097969",
           ]}
           style={{
-            width: "21.875rem",
+            // width: "20rem",
             fontFamily: '"Roboto", sans-serif',
           }}
         />

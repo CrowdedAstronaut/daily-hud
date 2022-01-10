@@ -26,3 +26,7 @@ h3 {
   /* padding-left: 1.688rem; */
   text-align: left;
 }
+
+#gauge-chart2 {
+  max-width: 20rem;
+}

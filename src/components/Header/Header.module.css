@@ -4,11 +4,13 @@
 } */
 .header-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 8% 4% 4% 4%;
 }
 .header {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
   text-align: left;
   /* display: flex; */
   /* flex-direction: column; */

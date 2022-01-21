@@ -5,11 +5,13 @@ export default function Header() {
   return (
     <div className={classes["header-wrapper"]}>
       <div className={classes.header}>
-        <span>Hello Friend 👋</span>
-        <h1 title="Welcome to daily HUD, a mobile dashboard app">
-          {" "}
-          Welcome Back!
-        </h1>
+        <div>Hello Friend 👋</div>
+        <div>
+          <h1 title="Welcome to daily HUD, a mobile dashboard app">
+            {" "}
+            Welcome Back!
+          </h1>
+        </div>
       </div>
     </div>
   );

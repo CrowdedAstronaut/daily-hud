@@ -10,8 +10,8 @@
 }
 .header {
   text-align: left;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
 
   font-family: "Roboto", sans-serif;
   font-weight: 600;

@@ -34,15 +34,13 @@ export default function CoinSearch() {
   }
 
   return (
-    <>
-      <div className={classes["coin-search-container"]}>
-        <div className={classes["coin-header"]}>
-          <h2>Crypto Dashboard</h2>
-        </div>
-        <div className={classes["coins-container"]}>
-          <CoinSearchResults coins={coins} />
-        </div>
+    <div className={classes["coin-search-container"]}>
+      <div className={classes["coin-header"]}>
+        <h2>Crypto Dashboard</h2>
       </div>
-    </>
+      <div className={classes["coins-container"]}>
+        <CoinSearchResults coins={coins} />
+      </div>
+    </div>
   );
 }

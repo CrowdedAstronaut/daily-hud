@@ -31,3 +31,9 @@ h3 {
 .fear-and-greed-chart {
   background-color: #171717;
 }
+
+@media only screen and (min-width: 900px) {
+.coin-search-container{
+  width: 100%;
+}
+}

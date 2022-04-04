@@ -61,3 +61,31 @@
 .bitcoin-mobile-chart {
   grid-column: 2;
 }
+
+
+@media only screen and (min-width: 900px) {
+ 
+    .coin-results-container{
+      grid-template-rows:1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 128px;
+     
+      }  
+      .bitcoin-container {
+        grid-column: 1;
+ 
+      }
+      
+      .ethereum-container {
+        grid-column: 2;
+        grid-row:1;
+    
+      }
+      
+      .cardano-container {
+        grid-column: 3;
+        grid-row:1;
+     
+      }
+    }
+  

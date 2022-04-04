@@ -15,13 +15,18 @@
 .App {
   /* position: relative; */
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(375px, 1fr);
   background-color: #000000;
   /* font-family: Gilroy-Bold; */
   color: white;
-  max-width: 23.44rem;
-
   /* flex-basis: 100%; */
   /* align-items: center; */
+}
+
+@media only screen and (min-width: 900px) {
+  .App {
+   width: 100%;
+   grid-template-columns: 800px 1fr;
+  }
 }

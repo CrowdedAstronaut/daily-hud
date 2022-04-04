@@ -6,8 +6,10 @@
   display: flex;
   align-items: flex-start;
   padding: 8% 4% 4% 4%;
+  grid-row: -1;
 }
 .header {
+
   flex-direction: column;
   display: flex;
   flex-grow: 1;

@@ -4,11 +4,6 @@ import WeatherSearchResults from "./WeatherSearchResults/WeatherSearchResults";
 import classes from "./WeatherSearch.module.css";
 import Search from "../../assets/icons/search-icon.svg";
 
-//Global Variables
-const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
-
-//APIS
-
 export default function WeatherSearch() {
   const [weather, setWeather] = useState([]);
   const [searchString, setSearchString] = useState("");
@@ -20,7 +15,9 @@ export default function WeatherSearch() {
   }, []);
 
   async function geoWeather() {
-    await fetch("https://freegeoip.app/json/")
+    await fetch(
+      "https://cli-auth.heroku.com/auth/cli/browser/2e447729-0b7c-45c0-8ef8-5475d08638eb?requestor=SFMyNTY.g2gDbQAAAA02OC4yMS4xNDkuMjAwbgYAQOqF-YEBYgABUYA.0Aitx-SBzltjpuoIKJ0_WjLBULXg5mB0Uq3Xg-RaOfQ/https://freegeoip.app/json/"
+    )
       .then((res) => res.json())
       .then((result) => {
         setSearchString(result.zip_code);

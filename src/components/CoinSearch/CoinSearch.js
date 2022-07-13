@@ -38,9 +38,7 @@ export default function CoinSearch() {
       <div className={classes["coin-header"]}>
         <h2>Crypto Dashboard</h2>
       </div>
-      <div className={classes["coins-container"]}>
-        <CoinSearchResults coins={coins} />
-      </div>
+      <CoinSearchResults coins={coins} />
     </div>
   );
 }

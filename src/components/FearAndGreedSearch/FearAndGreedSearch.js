@@ -7,7 +7,7 @@ console.log(
 );
 export default function FearAndGreedSearch() {
   const [fearAndGreed, setFearAndGreed] = useState([]);
-  // const [searchString, setSearchString] = useState("");
+  const [searchString, setSearchString] = useState("");
   // const [isLoading, setIsLoading] = useState(false);
   // const [error, setError] = useState(null);
 

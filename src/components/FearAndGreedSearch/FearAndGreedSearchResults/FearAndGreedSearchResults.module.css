@@ -9,6 +9,11 @@
 
 .fear-and-greed-chart {
   background-color: #171717;
+  margin: auto;
+}
+
+.fear-and-greed-chart > div {
+  margin: auto;
 }
 
 .fear-and-greed-classification,

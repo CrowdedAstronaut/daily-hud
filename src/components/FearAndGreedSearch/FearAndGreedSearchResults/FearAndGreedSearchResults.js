@@ -12,7 +12,7 @@ export default function FearAndGreedSearchResults({
     return (
       <div className={classes["fear-and-greed-chart"]}>
         <GaugeChart
-          id="gauge-chart2"
+          id="gauge-chart"
           nrOfLevels={5}
           percent={fearAndGreed.data[0].value * 0.01}
           arcWidth={0.1}

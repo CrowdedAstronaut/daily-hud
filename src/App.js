@@ -9,9 +9,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <WeatherSearch />
-      <CoinSearch />
-      <FearAndGreedSearch /> */}
       <Routes>
         <Route
           exact

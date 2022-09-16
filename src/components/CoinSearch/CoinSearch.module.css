@@ -1,12 +1,8 @@
-/* @import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-SemiBold.woff");
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Regular.woff");
-@import url("https://github.com/CrowdedAstronaut/daily-hud/blob/main/src/assets/fonts/Gilroy-Medium.woff"); */
-
 .coin-search-container {
-  width: 20.94rem;
-  position: relative;
+  width: 85%;
+  /* position: relative;
   top: 15.31rem;
-  height: 15.06rem;
+  height: 15.06rem; */
 }
 
 .coin-search-container h2,

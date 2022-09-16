@@ -11,7 +11,7 @@ const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
 export default function WeatherSearch() {
   const [weather, setWeather] = useState([]);
-  const [searchString, setSearchString] = useState("");
+  const [searchString, setSearchString] = useState("78751");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 

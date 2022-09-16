@@ -4,11 +4,12 @@
 } */
 
 .header {
-  position: absolute;
+  /* position: absolute; */
+  width: 85%;
   text-align: left;
   display: flex;
   flex-direction: column;
-  left: 1.25rem;
+  /* left: 1.25rem; */
   top: 1rem;
   background-color: #171717;
   font-family: "Roboto", sans-serif;

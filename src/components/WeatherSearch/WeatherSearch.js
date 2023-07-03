@@ -16,15 +16,35 @@ export default function WeatherSearch() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    geoWeather();
+    const getUserGeolocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            setSearchString(`${latitude},${longitude}`);
+            getWeather();
+          },
+          (error) => {
+            console.error("Error getting geolocation:", error);
+          }
+        );
+      } else {
+        console.error("Geolocation is not supported by this browser.");
+      }
+    };
+
+    getUserGeolocation();
   }, []);
 
   async function geoWeather() {
-    await fetch("https://freegeoip.app/json/")
-      .then((res) => res.json())
-      .then((result) => {
-        setSearchString(result.zip_code);
+    await fetch("https://freegeoip.app/json/", { mode: "no-cors" })
+      .then((res) => {
+        const zipCode = res.headers.get("zip-code");
+        setSearchString(zipCode);
         getWeather();
+      })
+      .catch((error) => {
+        console.error("Error retrieving ZIP code:", error);
       });
   }
 
@@ -64,10 +84,7 @@ export default function WeatherSearch() {
         <h2>Daily Weather</h2>
       </div>
       <div className={classes["weather-form"]}>
-        <form
-          onSubmit={handleSubmit}
-          className={classes["search-form"]}
-        >
+        <form onSubmit={handleSubmit} className={classes["search-form"]}>
           <label htmlFor="">
             <input
               placeholder="Search"
